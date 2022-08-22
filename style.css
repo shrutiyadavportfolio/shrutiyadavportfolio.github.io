@@ -1,9 +1,17 @@
+/* ROOT */
 :root {
   font-family: poppins;
   font-size: 10%;
   background-color: #fff;
 }
 
+#content {
+  margin-top: 70px;
+  margin-left: 7%;
+  margin-right: 7%;
+}
+
+/* LOADER */
 #loader {
   position: fixed;
   width: 100%;
@@ -11,8 +19,14 @@
   background: #fff url("loader.gif") no-repeat center center;
   z-index: 999;
   overflow: visible;
+  margin-left: 50%;
+  margin-top: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
+/* NAVBAR  */
 #navbar {
   overflow: hidden;
   background-color: #fff;
@@ -65,6 +79,7 @@
   z-index: 1;
 }
 
+/* FOOTER */
 .footera {
   display: block;
   margin-left: auto;
@@ -77,4 +92,30 @@
   margin-top: 20px;
   size: 1px;
   width: 80%;
+}
+
+.textcenter {
+  text-align: center;
+}
+
+.totop {
+  text-decoration: none;
+  font-family: poppins;
+  text-transform: capitalize;
+}
+
+.contact {
+  padding: 10px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 400px;
+  border-radius: 5px;
+  border-color: rgba(100, 100, 100, 0.3);
+  background-color: #fff;
+}
+
+.contact:hover {
+  background: #ccc;
+  transition-duration: 0.5s;
 }
