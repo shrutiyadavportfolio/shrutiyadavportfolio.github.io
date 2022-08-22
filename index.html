@@ -1,15 +1,77 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shruti Yadav | Portfolio</title>
+    <link rel="shortcut icon" href="fivicon.png">
     <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
 </head>
+
 <body>
-    
+    <div id="loader"></div>
+    <div id="content">
+        <div id="navbar" class="sticky">
+            <a href="index.html" style="background-color: #fff;"><img src="logo.png" width=150%"
+                    style="margin-top: -13px;"></a>
+            <a href="contact.html" style="text-align: center; float: right; margin-right: 5px; width: 8%;">CONTACT</a>
+            <a href="muse.html" style="float: right; width: 6%;">MUSE</a>
+            <a href="resume.html" style="float: right; width: 7%;">RÉSUMÉ</a>
+            <a href="work.html" style="float: right; width: 8%;">WORK</a>
+        </div>
+
+        <div id="body">
+            <img src="aboutme.jpg" class="imgfit">
+            
+        </div>
+
+        <hr class="abovefooter">
+
+        <footer>
+            <img class="footera" src="logo.png">
+            <a href="contact.html" class="totop"><button class="contact">GET IN TOUCH</button></a>
+            <table align="center" style="margin-top: 10px;" cellspacing="10px">
+                <tr>
+                    <td style="height: 20px; width: 20px;"><a href="https://www.instagram.com/kaneraaaa/"><img
+                                src="ig.png" style="width: 30px; height: 30px; opacity: 0.7;"></a></td>
+                    <td style="height: 20px; width: 20px;"><a href="mailto:shruti.yadav1105@gmail.com"><img src="em.png"
+                                style="width: 30px; height: 30px; opacity: 0.7;"></a></td>
+                    <td style="height: 20px; width: 20px;"><a href="https://www.behance.net/shrutiyadav2"><img
+                                src="be.png" style="width: 30px; height: 30px; opacity: 0.7;"></a></td>
+                </tr>
+            </table>
+            <p class="textcenter" style="font-size: 14px;">Designed by Shruti Yadav in 2022</p>
+        </footer>
+    </div>
+    <script type="text/javascript">
+        var loader;
+        function loadNow(opacity) {
+            if (opacity <= 0) {
+                displayContent();
+            }
+            else {
+                loader.style.opacity = opacity;
+                window.setTimeout(function () {
+                    loadNow(opacity - 0.05)
+                }, 100);
+            }
+        }
+
+        function displayContent() {
+            loader.style.display = 'none';
+            document.getElementById('content').style.display = 'block';
+        }
+
+        document.addEventListener("DOMContentLoaded", function () {
+            loader = document.getElementById('loader')
+            loadNow(1)
+        })
+    </script>
 </body>
+
 </html>

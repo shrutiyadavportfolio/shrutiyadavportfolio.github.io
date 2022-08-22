@@ -14,7 +14,6 @@
 </head>
 
 <body>
-    <div id="loader"></div>
     <div id="content">
         <div id="navbar" class="sticky">
             <a href="index.html" style="background-color: #fff;"><img src="logo.png" width=150%"
@@ -47,30 +46,6 @@
             <p class="textcenter" style="font-size: 14px;">Designed by Shruti Yadav in 2022</p>
         </footer>
     </div>
-    <script type="text/javascript">
-        var loader;
-        function loadNow(opacity) {
-            if (opacity <= 0) {
-                displayContent();
-            }
-            else {
-                loader.style.opacity = opacity;
-                window.setTimeout(function () {
-                    loadNow(opacity - 0.05)
-                }, 100);
-            }
-        }
-
-        function displayContent() {
-            loader.style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
-
-        document.addEventListener("DOMContentLoaded", function () {
-            loader = document.getElementById('loader')
-            loadNow(1)
-        })
-    </script>
 </body>
 
 </html>
