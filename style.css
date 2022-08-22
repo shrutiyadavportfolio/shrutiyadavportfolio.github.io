@@ -1,57 +1,80 @@
-:root{
-    font-family: poppins;
-    font-size: 10%;
-    background-color: rgb(10,10,10);
+:root {
+  font-family: poppins;
+  font-size: 10%;
+  background-color: #fff;
+}
+
+#loader {
+  position: fixed;
+  width: 100%;
+  height: 100vh;
+  background: #fff url("loader.gif") no-repeat center center;
+  z-index: 999;
+  overflow: visible;
 }
 
 #navbar {
-    overflow: hidden;
-    background-color: #;
-  }
-  
-  #navbar a {
-    float: left;
-    color: #fff;
-    text-align: center;
-    padding: 5px;
-    text-decoration: none;
-    font-size: 10px;
-    margin-top: 18px;
-    margin-left: 5px;
-    margin-bottom: 5px;
-    border-radius: 2px;
-    display: block;
-    width: 11%;
-    white-space: nowrap;
-  }
-  
-  #navbar a:hover {
-    background-color: #ddd;
-    color: black;
-    transition: 0.4s ease;
-    cursor: pointer;
-  }
-  
-  #navbar a.active {
-    background-color: #f2d244;
-    color: #000;
-  }
-  
-  .content {
-    padding: 16px;
-  }
-  
-  .sticky {
-    position: fixed;
-    top: 0;
-    left: 7%;
-    right: 7%;
-    width: 86%;
-    z-index: 1;
-    padding-top: 10px;
-  }
-  
-  .sticky + .content {
-    padding-top: 60px;
-    z-index: 1;
-  }
+  overflow: hidden;
+  background-color: #fff;
+}
+
+#navbar a {
+  float: left;
+  color: #000;
+  text-align: center;
+  padding: 5px;
+  text-decoration: none;
+  font-size: 10px;
+  margin-top: 18px;
+  margin-left: 5px;
+  margin-bottom: 5px;
+  border-radius: 2px;
+  display: block;
+  width: 11%;
+  white-space: nowrap;
+}
+
+#navbar a:hover {
+  background-color: #ddd;
+  color: black;
+  transition: 0.4s ease;
+  cursor: pointer;
+}
+
+#navbar a.active {
+  background-color: #f2d244;
+  color: #000;
+}
+
+.content {
+  padding: 16px;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  left: 7%;
+  right: 7%;
+  width: 86%;
+  z-index: 1;
+  padding-top: 10px;
+}
+
+.sticky + .content {
+  padding-top: 60px;
+  z-index: 1;
+}
+
+.footera {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
+
+.abovefooter {
+  color: #888;
+  margin-top: 20px;
+  size: 1px;
+  width: 80%;
+}
