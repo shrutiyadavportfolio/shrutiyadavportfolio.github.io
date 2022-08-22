@@ -5,12 +5,6 @@
   background-color: #fff;
 }
 
-#content {
-  margin-top: 70px;
-  margin-left: 7%;
-  margin-right: 7%;
-}
-
 /* LOADER */
 #loader {
   position: fixed;
@@ -19,11 +13,6 @@
   background: #fff url("loader.gif") no-repeat center center;
   z-index: 999;
   overflow: visible;
-  margin-left: 50%;
-  margin-top: 50%;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
 }
 
 /* NAVBAR  */
