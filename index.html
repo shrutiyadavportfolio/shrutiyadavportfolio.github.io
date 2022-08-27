@@ -1,36 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang='en' class=''>
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset='UTF-8'>
     <title>Shruti Yadav | Portfolio</title>
     <link rel="shortcut icon" href="fivicon.png">
-    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="style3.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+        rel="stylesheet">
+
 </head>
 
 <body>
     <div id="loader"></div>
     <div id="content">
         <div id="navbar" class="sticky">
-            <a href="index.html" style="background-color: #fff;"><img src="logo.png" width=150%"
+            <a href="index.html" style="background-color: #fff;"><img src="logo.png" width="150%"
                     style="margin-top: -13px;"></a>
             <a href="contact.html" style="text-align: center; float: right; margin-right: 5px; width: 8%;">CONTACT</a>
             <a href="muse.html" style="float: right; width: 6%;">MUSE</a>
             <a href="resume.html" style="float: right; width: 7%;">RÉSUMÉ</a>
-            <a href="work.html" style="float: right; width: 8%;">WORK</a>
+            <a href="#work" style="float: right; width: 8%;">WORK</a>
+        </div>
+        <div class="vid-border">
+            <video id="vid" loop autoplay autobuffer muted>
+                <source type="video/mp4" src="1.mp4">
+                </source>
+            </video>
         </div>
 
-        <div id="body">
-            <img src="aboutme.jpg" class="imgfit">
-            
+        <img src="2.jpg" class="image123" style="margin-top: -50px; transform: translateX(2vw);">
+
+        <div>
+            <img src="Monaco22_Background_v2.jpg" class="tila" alt="">
+            <img src="Monaco22_Background_v2.jpg" class="tira" alt="">
         </div>
 
-        <hr class="abovefooter">
 
         <footer>
             <img class="footera" src="logo.png">
@@ -47,31 +57,42 @@
             </table>
             <p class="textcenter" style="font-size: 14px;">Designed by Shruti Yadav in 2022</p>
         </footer>
-    </div>
-    <script type="text/javascript">
-        var loader;
-        function loadNow(opacity) {
-            if (opacity <= 0) {
-                displayContent();
-            }
-            else {
-                loader.style.opacity = opacity;
-                window.setTimeout(function () {
-                    loadNow(opacity - 0.05)
-                }, 100);
-            }
-        }
 
-        function displayContent() {
-            loader.style.display = 'none';
-            document.getElementById('content').style.display = 'block';
-        }
+        <script type="text/javascript">
+            var loader;
+            function loadNow(opacity) {
+                if (opacity <= 0) {
+                    displayContent();
+                }
+                else {
+                    loader.style.opacity = opacity;
+                    window.setTimeout(function () {
+                        loadNow(opacity - 0.05)
+                    }, 100);
+                }
+            }
 
-        document.addEventListener("DOMContentLoaded", function () {
-            loader = document.getElementById('loader')
-            loadNow(1)
-        })
-    </script>
+            function displayContent() {
+                loader.style.display = 'none';
+                document.getElementById('content').style.display = 'block';
+            }
+
+            document.addEventListener("DOMContentLoaded", function () {
+                loader = document.getElementById('loader')
+                loadNow(1)
+            })
+        </script>
+
+        <script>
+            function scrollFunction1() {
+                let e = document.getElementById("work");
+                e.scrollIntoView({
+                    block: 'start',
+                    behavior: 'smooth',
+                    inline: 'start'
+                });
+            }
+        </script>
 </body>
 
 </html>
